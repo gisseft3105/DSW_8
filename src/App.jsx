@@ -14,7 +14,7 @@ function App() {
         <h3>Nombre: Yefferson Mena Mena</h3>
 
         <h6>Enlace al proyecto</h6>
-        <a href = "index.html">click</a>
+        <a href = "inicio.html">click</a>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
