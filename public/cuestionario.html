@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <title>Diseños de sitios web - Cuestionario Box Model</title>
+
+</head>
+<body class="container">
+    <header>
+        <h1>Bienvenido a mi sitio Web</h1>
+        <h2>Curso Diseños de sitios web - Fase 4 - Implementar</h2>
+    </header>
+    <nav>
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="audio.html">Audios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="tema.html">Tema</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="tema.html">Selectores CSS</a></li>
+                    <li><a class="dropdown-item" href="boxmodel.html">Box model</a></li>
+                    <li><a class="dropdown-item" href="#">Media Queries</a></li>
+                    <li><a class="dropdown-item" href="#">Flex Box</a></li>
+                    <li><a class="dropdown-item" href="#">CSS Grid</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cuestionario.html">Cuestionario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="equipo.html">Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <aside>
+        <ul class="nav flex-column menu-vertical">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="audio.html">Audios del tema</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Tema</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="tema.html">Selectores CSS</a></li>
+                    <li><a class="dropdown-item" href="boxmodel.html">Box model</a></li>
+                    <li><a class="dropdown-item" href="#">Media Queries</a></li>
+                    <li><a class="dropdown-item" href="#">Flex Box</a></li>
+                    <li><a class="dropdown-item" href="#">CSS Grid</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cuestionario.html">Cuestionario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="equipo.html">Nosotros</a>
+            </li>           
+        </ul>
+    </aside>
+    <main class="formulario">
+        <div class="tab-content">
+            <section id="preguta1">
+                <h3>1. En que año se introdujo el termino Box Model</h3>
+                <label><input type="radio" value="1" name="pregunta1" onclick="respuesta(0, this)">1996</label>
+                <label><input type="radio" value="2" name="pregunta1" onclick="respuesta(0, this)">1999</label>
+                <label><input type="radio" value="3" name="pregunta1" onclick="respuesta(0, this)">1986</label> 
+            </section>
+            <section id="preguta2">
+                <h3>2. ¿Cual de estos elementos no hace parte del Box model?</h3>
+                <label><input type="radio" value="1" name="pregunta2" onclick="respuesta(1, this)">Padding</label>
+                <label><input type="radio" value="2" name="pregunta2" onclick="respuesta(1, this)">background</label>
+                <label><input type="radio" value="3" name="pregunta2" onclick="respuesta(1, this)">Margin</label> 
+            </section>
+            <section id="preguta3">
+                <h3>3. frontera que rodea al elemento y se utiliza para darle una apariencia estética a la caja</h3>
+                <label><input type="radio" value="1" name="pregunta3" onclick="respuesta(2, this)">content box</label>
+                <label><input type="radio" value="2" name="pregunta3" onclick="respuesta(2, this)">margin box</label>
+                <label><input type="radio" value="3" name="pregunta3" onclick="respuesta(2, this)">border box</label> 
+            </section>
+            <section id="preguta4">
+                <h3>4. separación o espacio interior que existe entre el contenido y el borde de la caja</h3>
+                <label><input type="radio" value="1" name="pregunta4" onclick="respuesta(3, this)">Border box</label>
+                <label><input type="radio" value="2" name="pregunta4" onclick="respuesta(3, this)">Padding box</label>
+                <label><input type="radio" value="3" name="pregunta4" onclick="respuesta(3, this)">content Box</label> 
+            </section>
+            <section id="preguta5">
+                <h3>5. las pautas del modelo de caja estan descritas por que organizacion: </h3>
+                <label><input type="radio" value="1" name="pregunta5" onclick="respuesta(4, this)">W2C</label>
+                <label><input type="radio" value="2" name="pregunta5" onclick="respuesta(4, this)">WWW</label>
+                <label><input type="radio" value="3" name="pregunta5" onclick="respuesta(4, this)">W3C</label> 
+            </section>
+            <button onclick="procesarRespuestas()">Enviar</button>
+            <h2>Cantidad de respuestas correctas: <span id="resultado"></span></h2>
+        </div>
+    </main>
+    <footer>
+        <p>Modificado: Mayo de 2023. Todos los derechos reservados. Implementado por: Yefferson Mena</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body{
+    background-color: #F6F1F1;
+}
+h1  {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article {
+    background-color: #F6F1F1;
+    text-align: left;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+img2 {
+    padding: 30px;
+    width: 20%;
+    align-items:center;
+}
+.footer {
+    background-color: gray;
+    padding: 5px;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+        'A A A C'
+        'B B B C'
+        'D D D C'
+        'E E E E';
+}
+
+header {
+    grid-area: A;
+    text-align: center;
+    background-color: #4E6C50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+nav{
+    grid-area: B;
+    background-color: #395144;
+}
+aside{
+    grid-area: C;
+    background-color: #AA8B56;
+}
+main{
+    grid-area: D;
+    background-color: #F6F1F1;
+}
+footer{
+    grid-area: E;
+    background-color: #AA8B56;
+    text-align: center;
+    padding: 3px;
+    color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white;
+    background-color: #AA8B56;
+    display: block;
+}
+.nav-link {
+    display: block;
+    color: white;
+}
+.nav-link:focus, .nav-link:hover {
+    color: black;
+}
+
+.menu-vertical{
+   padding: 10px 40px;
+   margin: 4px;
+}
+
+.audio{
+    padding: 10px;
+    align-items: center;
+}
+.yefferson{
+    padding: 10px;
+    text-align: justify;
+}
+
+.formulario{
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+.formulario section{
+    border: 2px solid #5624d0;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.formulario label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom:  3px;
+}
+.formulario label:hover{
+    background: #395144;
+
+}
+.formulario button{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #395144;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.formulario button:hover{
+    background: #4E6C50;
+}
+.formulario h2{
+    text-align: center;
+}
+#resultado{
+    font-size: 30px;
+    color: darkblue;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Diseños de sitios web</title>
+
+</head>
+<body class="container">
+    <header>
+        <h1>Bienvenido a mi sitio Web</h1>
+        <h2>Curso Diseños de sitios web - Fase 4 - Implementarr</h2>
+    </header>
+    <nav>
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="audio.html">Audios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="tema.html">Tema</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="tema.html">Selectores CSS</a></li>
+                    <li><a class="dropdown-item" href="boxmodel.html">Box model</a></li>
+                    <li><a class="dropdown-item" href="#">Media Queries</a></li>
+                    <li><a class="dropdown-item" href="#">Flex Box</a></li>
+                    <li><a class="dropdown-item" href="#">CSS Grid</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cuestionario.html">Cuestionario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="equipo.html">Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <aside>
+        <ul class="nav flex-column menu-vertical">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="audio.html">Audios del tema</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Tema</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="tema.html">Selectores CSS</a></li>
+                    <li><a class="dropdown-item" href="boxmodel.html">Box model</a></li>
+                    <li><a class="dropdown-item" href="#">Media Queries</a></li>
+                    <li><a class="dropdown-item" href="#">Flex Box</a></li>
+                    <li><a class="dropdown-item" href="#">CSS Grid</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cuestionario.html">Cuestionario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="equipo.html">Nosotros</a>
+              </li>
+          </ul>
+    </aside>
+    <main>
+        <section>
+            <h2>Box Model</h2>
+            <article>Al diseñar un documento, el motor de representación de todos los navegadores representa cada elemento como un cuadro 
+                rectangular. En CSS, el término "Box Model"(Modelo de Caja) se usa cuando se habla de diseño. Las pautas del modelo de 
+                caja están descritas por los estándares web World Wide Web Consortium (W3C).<br><br>
+                
+                <h2>Historia del Box Model</h2>
+                El box model se introdujo en 1996 después de que se añadieran márgenes, bordes y relleno a más elementos. Antes de HTML 4 y CSS, muy pocos elementos HTML admitían tanto bordes como padding, por lo que la definición del ancho y el alto de un elemento no era tan esencial como ahora.<br>
+                <br>
+                Después de 1996, CSS adoptó una definición de ancho en relación con el contenido, el borde(border), el margen (margin) y el relleno (padding) similar a la celda de una tabla. Desde entonces, se conoce como el box model W3C. Desde el lanzamiento de CSS3, ahora se conoce como content-box. De acuerdo con la especificación CSS1, publicada por W3C en 1996 y revisada en 1999, cuando se especifica explícitamente un ancho o alto para cualquier elemento a nivel de bloque, debe determinar solo el ancho o el alto del elemento visible, con el padding, los bordes y márgenes aplicados posteriormente. Entonces, para calcular el ancho o alto total del elemento, cada uno de los valores individuales deben sumarse.
+                <br>
+                El Box Model CSS es esencialmente una caja que envuelve cada elemento HTML. Este consta de:
+                <br>
+
+                <h2>Elementos del Box Model</h2>
+                <div class="img2">
+                    <img src="img/boxmodel1.png" class="rounded" alt="Foto" >
+                </div>
+                <ol>
+                    <h3><li>Content box:</li></h3>
+                    <p>El área del content (como su nombre lo dice) contiene el “contenido” central a mostrar, es decir, un texto, una imagen, un video, etc. El contenido siempre es lo que queremos mostrarle al usuario. 
+                        Esta área en muchas ocasiones tiene un color o imagen de fondo para hacerla más atractiva. Es el area donde se muestra el contenido, ya sea texto, imágenes, videos, etc. Este elemento se dimensiona usando
+                        propiedades como "inline-size" y "block-size" o "width" y "height".</p>
+                    <h3><li>Padding box:</li></h3>
+                    <p>El padding es una separación o espacio interior que existe entre el contenido y el borde de la caja, el cual se utiliza para dar una apariencia estética más atractiva y que el contenido no este pegado al borde.
+                        Cabe mencionar que el padding sigue siendo parte de la caja visible, por lo que, 
+                        si tenemos una imagen o color de fondo, este se extenderá a través del padding, esta parte se dimensiona utilizando "padding" y propiedades relacionadas.</p>
+                    <h3><li>Border box:</li></h3>
+                    <p>El borde es la línea que rodea la caja, es como la frontera que rodea al elemento, esta se utiliza para darle una apariencia estética a la caja, pues nos permite dibujar una línea de algún color. Se dimensiona utilizando la propiedad "border" y propiedades relacionadas.</p>
+                    <h3><li>Margin box:</li></h3>
+                    <p>El margen es la última área del Box Model y se puede ver como una separación invisible o transparente que ayuda a separar un elemento de otro. Cuando definimos un color o imagen de fondo, 
+                        este no se propaga a esta sección. Las márgenes siempre quedan fuera del modelo de caja, por lo que pueden utilizarse para crear espacio entre los elementos.La margen es la capa mas externa, encerrando las anteriores con un espacio en blan que delimita la caja y los demas elementos de la página. 
+                        Se dimensiona usando la propiedad "margin" y propiedades relacionadas</p>
+                                        
+                </ol>
+            </article> 
+        </section>
+    </main>
+    <footer>
+        <p>Modificado: 7 de abril de 2023. Todos los derechos reservados. Implementado por: Yefferson Mena</p>
+    </footer>
+</body>
+</html>
